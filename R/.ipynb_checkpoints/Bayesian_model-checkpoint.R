@@ -6,6 +6,7 @@ library("rethinking")
 # Set path to model:
 
 path2model<-here("outputs","BayesianModels","m.archaeology.rds")
+path2stan<-here("stan","m.archaeology.stan")
 
 # Prepare data:
 # Define database and collection
@@ -95,20 +96,8 @@ d<-list(R=data$public_metrics.x$retweet_count,
         L= length(unique(data$threat_level)),
         alphaD=alphad)
 # Run the model
-m.ZImultiCert <- stan(file="/home/InfluentialPast/InfluentialPast/stan/ZImultiCert_archaeology_simple.stan", data=d,iter=4000, chains=4,cores=4)
-
-
-m.ZImultiCertTSFTU_final_correct_archaeology <- stan(file="/home/InfluentialPast/InfluentialPast/stan/ZImultiCertTSFTU.stan", data=d,iter=4000, chains=4,cores=4)
-
-m.ZImultiCertTSFTU_final_archaeology <- stan(file="/home/InfluentialPast/InfluentialPast/stan/ZImultiCertTSFTU.stan", data=d,iter=4000, chains=4,cores=4)
-
-
-saveRDS(m.ZImultiCertTSFTU,path2model)
-saveRDS(m.ZImultiCert_archaeology_simple.stan,path2model)
-
-saveRDS(m.ZImultiCert_final_archaeology.stan,path2model)
-
+m.archaeology<- stan(file=path2stan, data=d,iter=4000, chains=4,cores=4)
 
 #This is the latest!
-saveRDS(m.ZImultiCertTSFTU_final_correct_archaeology,path2model)
+saveRDS(m.archaeology,path2model)
 
