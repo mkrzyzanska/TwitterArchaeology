@@ -1,0 +1,12 @@
+### This code imports the json Arrays into the mongodatabase, into appropriate collections (run on Windows with Cygwin)
+
+# Change directory assuming that InfluentialPasts is the home directory:
+cd data\archive_search
+
+# Import data
+FOR /F "delims=" %i IN ('"dir /s /b | grep "data_""') DO mongoimport --db InfluentialPasts --collection replies --jsonArray --file "%i"
+FOR /F "delims=" %i IN ('"dir /s /b | grep "users_""') DO mongoimport --db InfluentialPasts --collection usersArray --type=json --file "%i"
+
+# Also import the threat dictionary:
+mongoimport --db='InfluentialPast' --collection='threat_dictionary' --file='data/dictionaries/threat.csv' --type=csv --fields="_id"
+
