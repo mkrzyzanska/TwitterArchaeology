@@ -30,5 +30,5 @@ The LDA topic models were run on the text of the tweets with topic number (n) be
 
 ## Bayesian model:
 
-The Zero-Inflated model which inlcudes threat, sentiment topcis, and topics and user categories as variables was constructed in stan ([model ZImultiCertTSFTU](stan/m.archaeology.stan) and [run on the collected data](R/Bayesian_model.R). Subsequently, the model results were analysed and plotted [here](Notebooks/Bayesian_model.ipynb), and the model itself is available [here](outputs/BayesianModels/m.archaeology.rds). Additionally, a model which includes additional variables with associated files is available in [extra_variables](extra_variables) folder.
+The Zero-Inflated model which inlcudes threat, sentiment topcis, and topics and user categories as variables was constructed in [stan](stan/m.archaeology.stan)) and [run on the collected data](R/Bayesian_model.R). Subsequently, the model results were analysed and plotted [here](Notebooks/Bayesian_model.ipynb), and the model itself is available [here](outputs/BayesianModels/m.archaeology.rds). Additionally, a model which includes additional variables with associated files is available in [extra_variables](extra_variables) folder.
  
