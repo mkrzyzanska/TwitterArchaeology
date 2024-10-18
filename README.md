@@ -1,10 +1,10 @@
-# ObjectsNationMystery
+# TwitterArchaeology
 
-Code to accompany the article: Objects, nation, and mystery: the triggers of imagination about the deep past online.
+Code to accompany the article:
 
 # Introduction:
 
-This repository contains codes used for collection and management of data and the analysis undertaken for the article 'Code to accompany the article: Objects, nation, and mystery: the triggers of imagination about the deep past online.' It was carried out in R, python and mongo database shell. 
+This repository contains codes used for collection and management of data and the analysis undertaken for the article 'Code to accompany the article: It was carried out in R, python and mongo database shell. 
 
 # Data collection:
 
@@ -30,5 +30,5 @@ The LDA topic models were run on the text of the tweets with topic number (n) be
 
 ## Bayesian model:
 
-The Zero-Inflated model which inlcudes threat, sentiment topcis, and user categories as variables was constructed in stan ([model ZImultiCertTSFTU](stan/ZImultiCertTSFTU.stan) and [run on the collected data](R/Bayesian_model.R). Subsequently, the model results were analysed and plotted [here](Notebooks/Bayesian_model.ipynb), and the model itself is available [here](outputs/BayesianModels/m.ZImultiCertTSFTU.rds). Additionally, a model which excludes the threat levels and predicts a positive relationship with sentiment is availabe under name [ZIFSTU_multilevel](outputs/BayesianModels/ZIFSTU_multilevel.rds) (see also associated files in the [outputs](outputs/BayesianModels) folder.# TwitterArchaeology
+The Zero-Inflated model which inlcudes threat, sentiment topcis, and topics and user categories as variables was constructed in stan ([model ZImultiCertTSFTU](stan/m.archaeology.stan) and [run on the collected data](R/Bayesian_model.R). Subsequently, the model results were analysed and plotted [here](Notebooks/Bayesian_model.ipynb), and the model itself is available [here](outputs/BayesianModels/m.archaeology.rds). Additionally, a model which includes additional variables with associated files is available in [extra_variables](extra_variables) folder.
  
