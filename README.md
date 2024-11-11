@@ -22,7 +22,7 @@ Sentiment scores were calculated using [Valence Aware Dictionary and sEntiment R
 
 ## Threat:
 
-Threat words were identified based on the dictionary provided in [Table S2](https://www.pnas.org/doi/suppl/10.1073/pnas.2113891119/suppl_file/pnas.2113891119.sapp.pdf) in the supplementary material to [Choi et al. 2022](https://www.pnas.org/doi/suppl/10.1073/pnas.2113891119). The dictionary was [imported](mongo/Import_to_mongo.txt) into mongo database and used to [identify threat level in tweets](mongo/threat.js). 
+Threat words were identified based on the dictionary provided in [Table S2](https://www.pnas.org/doi/suppl/10.1073/pnas.2113891119/suppl_file/pnas.2113891119.sapp.pdf) in the supplementary material to [Choi et al. 2022](https://www.pnas.org/doi/suppl/10.1073/pnas.2113891119). The dictionary was [imported](mongo/Import_to_mongo.txt) into the mongo database and used to [identify threat level in tweets](mongo/threat.js). 
 
 ## Topic models:
 
