@@ -4,7 +4,7 @@ Code to accompany the article:
 
 # Introduction:
 
-This repository contains codes used for collection and management of data and the analysis undertaken for the article 'Code to accompany the article: It was carried out in R, python and mongo database shell. 
+This repository contains codes used for the collection and management of data and for the analysis undertaken for the article 'Positive sentiment and expertise predict the diffusion of archaeological content on social media'. The code was run in R, python and mongo database shell. 
 
 # Data collection:
 
