@@ -26,7 +26,7 @@ Threat words were identified based on the dictionary provided in [Table S2](http
 
 ## Topic models:
 
-The LDA topic models were run on the text of the tweets with topic number (n) between 2 and 29 (see [here](python/lda.py)) and [coherence scores](Notebooks/Sentiment_scores.ipynb) were calculated for each n. The model with the highest score was selected and [interactive visualisation](outputs/TopicModels/tweets/tm_vis29.html) was constructed to help with the analysis of the topics. Subsequently, the [topic probabilities were assigned to the tweets](python/topic_assignement.py) in the database. The same procedure was repeated for user categories with the visualisation available [here](outputs/TopicModels/users/users_topic_model29.html).
+The LDA topic models were run on the text of the tweets with topic number (n) between 2 and 29 (see [here](python/lda.py)) and [coherence scores](Notebooks/Sentiment_scores.ipynb) were calculated for each n. The model with the highest score was selected and an [interactive visualisation](outputs/TopicModels/tweets/tm_vis29.html) was constructed to help with the analysis of the topics. Subsequently, the [topic probabilities were assigned to the tweets](python/topic_assignement.py) in the database. The same procedure was repeated for user categories with the visualisation available [here](outputs/TopicModels/users/users_topic_model29.html).
 
 ## Bayesian model:
 
