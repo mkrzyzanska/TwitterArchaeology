@@ -1,7 +1,0 @@
-#### Model with extra variables ####
-
-This folder contains the files pertaining to the model run with extra variables, namely: tweet's lenght, presence/absence of image or video and presence/absence of external link (url). See the jupyter notebook for the model specification and the outputs.
-
-The outputs show that there is a lot of uncertainty about the effects the presence of the url and image/video have [see posterior](m.archaeology_posterior.png) - and their inclusion also increases the uncertainty of intercepts  for [topics](m.archaeology_posterior.png) and [user categories](m.archaeology_posteriorIntUsers.png).
-
-Taken at face value, the results would suggest that there is a postive effect of the lenght of the tweets(measured in character count) - bC - on retweeting, negative effect of the presence of the url (url1), and postive effect of the presence of image/video (img1). Inclusion of those values does not affect the overall effect of sentiment, threat, number of followers and the user categories, but has some minor impact on the order of topics in regard to retweeting. For example, topic 17 in this version of the model has the highest posterior median, and there is some reshuffling within top, middlle and bottom topics as compared to the model that does not include additional variables. This likely stems from the fact that apeal of the tweets on certain topics may be more or less likely to be tied to the presence of images and urls. However this does not affect the overall conculsions. 
