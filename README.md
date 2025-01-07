@@ -1,6 +1,6 @@
 # TwitterArchaeology
 
-Code to accompany the article:
+Code to accompany the article: *Positive sentiment and expertise predict the diffusion of archaeological content on social media*.
 
 # Introduction:
 
